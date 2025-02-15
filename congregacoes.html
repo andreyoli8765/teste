@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/Logo-AD.png" type="image/x-icon">
+    <title>AD Belém Ribeirão Preto</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/style_congregacao.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+
+    <!----------------------------------------------------- Cabeçalho Padrão ---------------------------------------->
+
+
+    <header>
+
+        <div>
+
+            <ul id="header_titulo">
+                <li>
+                    <a href="index.html">
+                        <img src="img/Logo_escrito.png" alt="Endereço" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="credo.html">
+                        Nosso Credo
+                    </a>
+                </li>
+                <li>
+                    <a href=" presidente.html">
+                        Pastor Presidente
+                    </a>
+                </li>
+                <li>
+                    <a href="congregacoes.html" class="ativo">
+                        Congregações
+                    </a>
+                </li>
+                <li>
+                    <a href="noticias.html">
+                        Notícias
+                    </a>
+                </li>
+                <li>
+                    <a href="culto_vivo.html">
+                        Culto ao Vivo
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/adbelemribeiraosp/" target="_blank">
+                        <img src="img/facebook.png" alt="Endereço" class="icon_titulo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/adbelemribeiraopretosp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img src="img/instagram.png" alt="Endereço" class="icon_titulo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/adbelemribeiraopreto" target="_blank">
+                        <img src="img/youtube.png" alt="Endereço" class="icon_titulo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="whatsapp-link-header">
+                        <img src="img/whatsapp.png" alt="Endereço" class="icon_titulo" target="_blank">
+                    </a>
+                </li>
+            </ul>
+
+            <span id="menu-toggle" onclick="toggleMenu()">
+                <span class="hamburger-icon">&#9776;</span> <!-- Ícone do hambúrguer separado -->
+                <a href="index.html">
+                    <img src="img/Logo_escrito.png" alt="Endereço" class="icon_mobile">
+                </a>
+                <span id="menu_texto"></span>
+            </span>
+
+            <!-- Menu hambúrguer -->
+            <ul id="menu">
+                <li><a href="index.html">Ínicio</a></li>
+                <li><a href="credo.html">Nosso Credo</a></li>
+                <li><a href="presidente.html">Pastor Presidente</a></li>
+                <!-- <li><a href="congregacoes.html">Congregações</a></li> -->
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="culto_vivo.html">Culto ao Vivo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="areaDalinha">
+            <div class="Linha"></div>
+        </div>
+
+    </header>
+    <!----------------------------------------------------- Cabeçalho Padrão Fim ---------------------------------------->
+
+
+
+    <!----------------------------------------------------- Main  ---------------------------------------->
+
+    <div class="area">
+
+
+        <div class="cabecalho">
+            <h1>Encontre Sua Congregação</h1>
+            <div class="filtros">
+                <input type="text" id="busca" placeholder="Buscar por nome..." oninput="filtrarIgrejas()">
+                <select id="filtroBairro" onchange="filtrarIgrejas()">
+                    <option value="todos">Todos os bairros e Cidades</option>
+                    <option value="Ipiranga">Bairro Ipiranga - Ribeirão preto, SP</option>
+                    <option value="Jardim Cristo Redentor">Bairro: Jardim Cristo Redentor - Ribeirão Preto, SP</option>
+                    <option value="Jardim Heitor Rigon">Bairro: Jardim Heitor Rigon - Ribeirão Preto, SP </option>
+                    <option value="Orestes Lopes">Bairro: Orestes Lopes - Ribeirão Preto, SP</option>
+                    <option value="Paulo Gomes">Bairro: Paulo Gomes - Ribeirão Preto, SP</option>
+                    <option value="Ribeirão Verde">Bairro: Ribeirão Verde - Ribeirão Preto, SP</option>
+                    <option value="Pq dos Servidores">Bairro: Parque dos Servidores - Ribeirão Preto, SP</option>
+                    <option value="Parque Ribeirão">Bairro: Parque Ribeirão - Ribeirão Preto, SP</option>
+                    <option value="Vila Guiomar">Bairro: Vila Guiomar - Ribeirão Preto, SP</option>
+                    <option value="Vila Marchesi">Bairro: Vila Marchesi - Ribeirão Preto, SP</option>
+                    <option value="Vila Virgínia">Bairro: Vila Virgínia - Ribeirão Preto, SP</option>
+                    <option value="Batatais Jardim Anselmo Testa">Cidade: Batatais, SP - Bairro: Jardim Anselmo Testa
+                    </option>
+                    <option value="Batatais Vila Maria">Cidade: Batatais, SP - Bairro: Vila Maria</option>
+                    <option value="Brodowski: Vereador Joao Luis de Vicente">Cidade: Brodowski, SP - Bairro: Joao Luis
+                    </option>
+                    <option value="Cravinhos: Nova Cravinhos">Cidade: Cravinhos, SP - Bairro: Nova Cravinhos</option>
+                    <option value="Morro Agudo">Cidade: Morro Agudo, SP</option>
+                    <option value="Serrana">Cidade: Serrana, SP</option>
+                </select>
+                <button onclick="filtrarIgrejas()">Filtrar</button>
+            </div>
+        </div>
+
+        <div id="containerIgrejas" class="container-igrejas"></div>
+
+        <div class="paginacao">
+            <button id="anterior" onclick="mudarPagina(-1)" disabled>Anterior</button>
+            <span id="paginaAtual">Página 1</span>
+            <button id="proximo" onclick="mudarPagina(1)">Próximo</button>
+        </div>
+
+
+    </div>
+
+    <!----------------------------------------------------- Main Fim  ---------------------------------------->
+
+    <!----------------------------------------------------- rodapé Padrão ---------------------------------------->
+
+    <div id="body_fim">
+        <div class="left-content">
+            <a href="index.html">
+                <img src="img/Logo_escrito.png" alt="Endereço" class="icon_fim">
+            </a>
+        </div>
+
+        <div class="right-content">
+            <h4>Institucional</h4> <!-- Título da lista -->
+            <ul id="body_fim_lista">
+                <li>
+                    <a href="credo.html">Nosso Credo</a>
+                </li>
+                <li>
+                    <a href="presidente.html">Pastor Presidente</a>
+                </li>
+                <li>
+                    <a href="congregacoes.html">Congregações</a>
+                </li>
+                <li>
+                    <a href="noticias.html">Notícias</a>
+                </li>
+                <li>
+                    <a href="culto_vivo.html">Culto ao Vivo</a>
+                </li>
+            </ul>
+            <!-- Repita as outras listas conforme necessário -->
+        </div>
+
+        <div class="right-content">
+            <h4>Relacionados</h4> <!-- Título da lista -->
+            <ul id="body_fim_lista">
+                <li>
+                    <a href="https://www.tvadbelem.com.br/" target="_blank">TV AD Belém</a>
+                </li>
+                <li>
+                    <a href="https://www.radioadbelemsp.com.br/l" target="_blank">Rádio AD Belém FM 88.7</a>
+                </li>
+                <li>
+                    <a href="https://cgadb.org.br/" target="_blank">CGADB</a>
+                </li>
+                <li>
+                    <a href="https://confradesp.com.br/" target="_blank">CONFRADESP</a>
+                </li>
+            </ul>
+            <!-- Repita as outras listas conforme necessário -->
+        </div>
+
+        <div class="right-content">
+            <h4>Contato</h4> <!-- Título da lista -->
+            <ul id="body_fim_lista">
+                <li>
+                    <a href="mailto:contato.adbelemrp@gmail.com">contato.adbelemrp@gmail.com</a>
+                </li>
+                <li>
+                    <a href="tel:+5516981811523">Tel: (16) 98181 - 1523</a> <!--Colocar WhatsApp-->
+                </li>
+                <li>
+                    <a href="#" id="whatsapp-link" target="_blank">
+                        Cel: (16) 98181 - 1523
+                    </a> <!--Colocar WhatsApp-->
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/T9UtxynWsGKABNQ97" target="_blank">Localização</a>
+                </li>
+            </ul>
+            <!-- Repita as outras listas conforme necessário -->
+        </div>
+    </div>
+
+    <!----------------------------------------------------- rodapé Padrão ---------------------------------------->
+
+    <footer id="footer-icons">
+        <ul class="footer-icon-list">
+            <li>
+                <a href="https://www.facebook.com/adbelemribeiraosp/" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook" class="icon_titulo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/adbelemribeiraopretosp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank">
+                    <img src="img/instagram.png" alt="Instagram" class="icon_titulo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/user/adbelemribeiraopreto" target="_blank">
+                    <img src="img/youtube.png" alt="YouTube" class="icon_titulo">
+                </a>
+            </li>
+            <li>
+                <a href="#" id="whatsapp-link-mobile" target="_blank">
+                    <img src="img/whatsapp.png" alt="WhatsApp" class="icon_titulo">
+                </a>
+            </li>
+        </ul>
+
+        <a href="https://d2adigital.vercel.app" target="_blank">
+            <p id="footer-text">D2A Digital Solutions - 2024</p>
+        </a>
+
+    </footer>
+
+    <ul id="header">
+        <li>
+            <img src="img/dizimo.png" alt="Ícone do Dízimo" class="icon_header">
+            <span>
+                <a href="dizimo.html">Dízimo/Oferta</a>
+            </span>
+        </li>
+        <li>
+            <img src="img/telefone.png" alt="Endereço" class="icon_header">
+            Tel: (11) 2796-9122
+        </li>
+        <li>
+            <img src="img/gmail.png" alt="Endereço" class="icon_header">
+            contato@ad.org.br
+        </li>
+        <li>
+            <img src="img/endereco.png" alt="Endereço" class="icon_header">
+            R André Rebouças, 1119, Ribeirão Preto/SP
+        </li>
+        <li>
+            <a href="https://d2adigital.vercel.app" target="_blank">
+                <img src="img/dizimo.png" alt="Endereço" class="icon_header">
+                D2A Digital Solutions - 2024
+            </a>
+        </li>
+    </ul>
+
+    <!----------------------------------------------------- rodapé Padrão Fim ---------------------------------------->
+
+    <!----------------------------------------------------CHAMANDO AUTOMAÇÃO------------------------------------------>
+    <script src="App/automacao.js"></script>
+
+</body>
+
+</html>
+
+<!----------------------------------------------------CHAMANDO AUTOMAÇÃO------------------------------------------>
+<script src="App/automacao.js"></script>
+<script src="App/congregaçao.js"></script>
+</body>
+
+</html>

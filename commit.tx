@@ -1,0 +1,34 @@
+
+---------------------------------------------------------------------------------
+
+
+Atualização - 18/11 as 23:53h - Andrey
+
+
+Aualizei o banco de dados da pagina congragações e ajuste o botão 'Ver local'.
+
+
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+
+
+Atualização - 19/11 as 03:18h - Andrey
+
+
+Deixei todas as páginas com menu hambúrguer e centralizei o logo. Ajustei a página 'Nosso Credo' porque ela não estava mais responsiva e também deixei responsiva a 'área ainda não desenvolvida'.
+
+
+---------------------------------------------------------------------------------
+
+Daniel - 19/11/2024
+- Enviado commit para atualização de repositorio online.
+- Atualizado a lista de todas as páginas com id="header"
+- Criado o link para Dizimo/Oferta e D2A
+- Replicado Rodapé para todas as páginas
+- Atualizado TEXT DECORATION no D2A para none em todas as páginas
+- Alterado fonte para font-family: 'Tahoma', sans-serif; em todas as páginas
+- Daniel - Retirado target blank da página index no campo Nossas igrejas
+---------------------------------------------------------------------------------
+
+Andrey - Ajustado fonte ok

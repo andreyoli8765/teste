@@ -1,0 +1,515 @@
+/* Limpa as formatações padrão e aplica a fonte */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+}
+
+:root {
+    --cor-fundo-titulo: #0f2e5a;
+    --cor-fonte-titulo: white;
+    --cor-fonte-header-titulo: black;
+    --cor-botão: #FA812F;
+    --cor-linha: #FAB12F;
+    --cor-linha-final: #FEF3E2;
+    --fonte-principal: 'Arial', sans-serif;
+    --cor-footer: #333;
+}
+
+
+/* ------------------------------------------------------- Cabeçalho Padrão ---------------------------------------------------------*/
+.icon_header {
+    margin-left: 70px;
+    /* Adiciona espaço entre os itens */
+    margin-right: 5px;
+    width: 20px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+#header {
+    display: flex;
+    justify-content: center;    /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    height: 8vh;    /* Ocupa toda a altura da tela */
+    background-color: var(--cor-fundo-titulo);
+    color: var(--cor-fonte-titulo);
+    font-size: 1rem;
+    z-index: 1000; /* Para garantir que o header fique sobre os outros elementos */
+    transition: top 0.3s; /* Para adicionar um efeito suave quando o header aparecer ou desaparecer */
+}
+
+/* Classe que será adicionada quando o cabeçalho for fixado */
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* Sombra mais forte quando fixo */
+    z-index: 9999;  /* Certifica-se que o cabeçalho fique acima de outros elementos */
+}
+
+#header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li a {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-decoration: none;
+    color: var(--cor-fonte-titulo);
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    /* Alinha a imagem e o texto verticalmente */
+}
+
+ul li .icon {
+    margin-left: 40px;
+    /* Adiciona espaço entre os itens */
+    margin-right: 5px;
+    width: 17px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease;
+    /* Suaviza a animação */
+}
+
+.icon:hover,
+.icon_titulo:hover {
+    transform: scale(1.2);
+    /* Aumenta a imagem em 20% */
+}
+
+#header_titulo {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    background-color: #f0f0f0;
+    /* Cor de fundo */
+}
+
+#header_titulo li {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* Ajusta o espaçamento entre os itens da lista */
+    font-size: 1rem;
+    display: flex;
+    /* Permite o alinhamento horizontal dos itens */
+    align-items: center;
+    /* Alinha ícones e texto */
+}
+
+#header_titulo li a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: var(--cor-fonte-header-titulo);
+}
+
+/* Estilo para a página ativa */
+#header_titulo li a.ativo {
+    color: var(--cor-botão);
+    /* Cor do texto */
+    text-decoration-line: underline overline;
+    /* Apenas sublinhado */
+    text-decoration-color: var(--cor-fundo-titulo);
+    /* Cor do sublinhado */
+    text-underline-offset: 5px;
+    /* Espaço entre o sublinhado e o texto */
+}
+
+#header_titulo li .icon {
+    width: 250px;
+    /* Tamanho da imagem */
+    height: auto;
+}
+
+#header_titulo .icon_titulo {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+}
+
+#header_titulo a:hover {
+    color: var(--cor-fundo-titulo);
+    /* Cor do texto */
+    text-decoration-line: underline overline;
+    /* Apenas sublinhado */
+    text-decoration-color: var(--cor-fundo-titulo);
+    /* Cor do sublinhado */
+    text-underline-offset: 5px;
+    /* Espaço entre o sublinhado e o texto */
+
+}
+
+/* ------------------------------------------------------- Style:Main feito por Andrey ---------------------------------------------------*/
+
+
+.div_principal_Nossocredo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.texto_Nossocredo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 50px;
+    text-align: left;
+    width: 70%;
+}
+
+
+.texto_Nossocredo p {
+    text-align: justify;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 18px;
+    color: #343132;
+    font-family: sans-serif;
+    width: 100%;
+
+}
+
+.texto_Nossocredo h1 {
+    font-size: 2.5rem;
+    color: #343132;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+
+.imagem-pomba {
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    width: 284px;
+    z-index: 10;
+    opacity: 0.1;
+}
+
+.imagem-mao {
+    position: absolute;
+    bottom: 4%;
+    right: 130px;
+    width: 284px;
+    opacity: 0.1;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    max-width: 100%; /* Ajusta o tamanho máximo do contêiner */
+    overflow: hidden; /* Oculta qualquer parte extra da imagem */
+}
+
+.image-container img {
+    width: 100%; /* Define que a imagem ocupará a largura total do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.texto-sobre-imagem2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+
+#header_mobile, #menu-toggle, #menu, .areaDalinha, #footer-icons {
+    display: none;
+}
+/* ------------------------------------------------------- Main Feito por Andrey Fim ---------------------------------------------------------*/
+
+/* ------------------------------------------------------- rodapé Padrão ---------------------------------------------------------*/
+
+#body_fim {
+    display: flex;     /* Alinha os elementos lado a lado */
+    justify-content: space-between;
+    /* Centraliza verticalmente */
+    padding: 4% 10%;
+    /* Espaçamento interno */
+}
+
+
+#body_fim_lista a:hover {
+    color: var(--cor-fundo-titulo);    /* Cor do texto */
+    text-decoration-line: underline;
+    text-decoration-color: var(--cor-fundo-titulo);     /* Cor do sublinhado */
+    text-underline-offset: 5px;    /* Espaço entre o sublinhado e o texto */
+}
+
+
+#body_fim_lista a {
+    text-decoration: none;
+    color: #333;
+    /* Cor do texto */
+    margin-top: 5px;
+}
+
+.right-content h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#body_fim_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: left;
+    flex-direction: column;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.left-content {
+    flex: 0 0 auto;
+    /* A imagem não cresce nem encolhe */
+}
+
+.icon_fim {
+    width: 20rem;
+    /* Tamanho da imagem */
+}
+
+/* ------------------------------------------------------- rodapé Padrão Fim ---------------------------------------------------------*/
+
+/* ------------------------------------------------------- Inicio @MEDIA página Index ---------------------------------------------------------*/
+@media (max-width: 1000px) {
+    #header {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        cursor: pointer;
+        background: var(--cor-fundo-titulo);
+        padding: 0;
+        position: relative;
+        z-index: 11;
+        color: white;
+        width: auto;
+        gap: 35%;
+        height: 80px;
+    }
+
+    .hamburger-icon {
+        cursor: pointer; /* Tornando o ícone do hambúrguer clicável */
+    }
+
+    #menu-toggle a,
+    #menu-toggle #menu_texto {
+        pointer-events: none; /* Tornando o link e o texto não clicáveis */
+    }
+    
+    #menu_texto {
+        color: white;
+        text-align: center;
+    }
+
+    .imagem-pomba {
+        width: 150px;
+    }
+    
+    #menu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        background: var(--cor-fundo-titulo);
+        width: 100%;
+        z-index: 10;
+    }
+
+    #menu li {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: var(--cor-fundo-titulo);
+        color: white;
+        font-size: 16px;
+        white-space: nowrap;
+        width: auto;
+        text-align: center;
+    }
+
+    #menu li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    #menu.show {
+        display: block;
+    }
+
+    .areaDalinha {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 5px;
+        background-color: #e6e6e6;
+    }
+    
+    .Linha {
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to right, var(--cor-botão), var(--cor-linha) 100%);
+    }
+
+    #header_titulo {
+        display: none;
+    }
+
+    .icon_mobile {
+        margin-top: -30px;
+        position: absolute; /* Posiciona a imagem de forma absoluta */
+        left: 50%; /* Posiciona a imagem no centro */
+        transform: translateX(-50%); /* Ajusta a posição para centralizar a imagem */
+        width: 140px; /* Define a largura da imagem */
+        height: 55px; /* Define a altura da imagem */
+        cursor: pointer; /* Garante que o ícone seja clicável */
+    }
+
+    #header_titulo img {
+        display: none;
+    }
+
+    #header_titulo li {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #header_titulo li a {
+        color: var(--cor-fonte-titulo);
+    }
+
+    #body_fim {
+        display: none;
+    }
+
+    .texto_Nossocredo {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .image-container {
+        height: 400px; /* Define uma altura maior para o contêiner */
+    }
+
+    .image-container img {
+        height: 100%; /* Aumenta a altura da imagem para preencher o contêiner */
+        object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    }
+
+    .texto_Nossocredo {
+        align-items: center;
+        margin: 0;
+        padding: 50px;
+        width: 100%;
+    }
+    
+    .texto-sobre-imagem {
+        width: 100%;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .texto-sobre-imagem2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #footer-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: var(--cor-footer);
+    }
+
+    #footer-icons a {
+        text-decoration: none;
+    } 
+    
+    .footer-icon-list {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer-icon-list li a img {
+        width: 24px;
+        height: 24px;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+    
+    .footer-icon-list li a img:hover {
+        opacity: 1;
+    }
+    
+    #footer-text {
+        color: white;
+        margin: 0;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    #footer-text a {
+        text-decoration: none;
+    }    
+   
+}
